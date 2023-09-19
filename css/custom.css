@@ -1,0 +1,77 @@
+html * {
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px 0;
+  font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+}
+
+.quotation {
+  font-size: 48px;
+  background-image: -webkit-linear-gradient(45deg,#188ff1,#6ec4d7,#279375);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+}
+
+.links {
+  display: flex;
+  padding: 0 40px;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.router_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 280px;
+  max-width: 520px;
+  box-shadow: 1px 2px 6px 3px #c9c9c980;
+  border-radius: 8px;
+  transition: transform .3s cubic-bezier(0,0.25,0.6,1);
+}
+
+.router_wrapper:hover {
+  transform: scale(1.1);
+}
+
+.router_icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.router_text {
+
+}
+
+.router_icon[data-id="i_unicorn"] {
+  background: no-repeat center / 80% url("/img/index/favicon.ico");
+}
+
+.router_title {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  padding: 4px 8px;
+}
+
+.image_wrapper {
+  width: 100%;
+}
+
+
+.copyright {
+  display: flex;
+  align-items: end;
+  padding: 0 48px;
+  height: 80px;
+}
